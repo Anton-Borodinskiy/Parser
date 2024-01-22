@@ -129,3 +129,24 @@ for tab in table:
             if int(col.text)%3 == 0:
                 sum_of_3 += int(col.text)
 print(sum_of_3)
+
+
+#PART 8
+import requests
+from bs4 import BeautifulSoup
+
+url = 'https://parsinger.ru/4.8/8/index.html'
+
+response = requests.get(url)
+response.encoding = 'utf-8'
+soup = BeautifulSoup(response.text, 'html.parser')
+
+table = soup.find_all("table")[1]
+
+colspan = table.find_all(colspan=True)
+
+total = 0
+for span in colspan:
+    total += int(span.text)
+
+print(total)
