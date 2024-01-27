@@ -94,3 +94,8 @@ with webdriver.Chrome() as browser:
 #         print("Заголовок новости:", title_element.text)
 #
 # # Браузер закроется автоматически после выхода из блока with
+
+
+#         gray = parent.find_element(By.CSS_SELECTOR, '[color=gray]')
+
+#     for i in browser.find_elements(By.CSS_SELECTOR, 'div[style*="background-color"]'):
