@@ -2,8 +2,8 @@ from pyrogram import Client, filters
 import asyncio
 
 # Укажите свои API ID и API Hash для подключения к Telegram API
-api_id = 2 ** ** ** *2
-api_hash = "8****************7"
+# api_id = 2 ** ** ** *2
+# api_hash = "8****************7"
 
 # Создание клиента Pyrogram для взаимодействия с Telegram
 app = Client("my_session", api_id=api_id, api_hash=api_hash)
